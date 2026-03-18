@@ -53,7 +53,7 @@ const ResearchSection = () => (
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5, ease: [0.2, 0, 0, 1], delay: i * 0.1 }}
+            transition={{ duration: 0.5, ease: [0.2, 0, 0, 1] as const, delay: i * 0.1 }}
             whileHover={{ y: -4 }}
             className="group bg-card p-6 rounded-[12px] transition-shadow duration-300"
             style={{ boxShadow: "var(--card-shadow)" }}

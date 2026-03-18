@@ -35,7 +35,7 @@ const WorkSection = () => (
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-30px" }}
-            transition={{ duration: 0.5, ease: [0.2, 0, 0, 1], delay: i * 0.05 }}
+            transition={{ duration: 0.5, ease: [0.2, 0, 0, 1] as const, delay: i * 0.05 }}
             className="group flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 py-5 border-b border-border/50 hover:bg-secondary/30 -mx-4 px-4 rounded-md transition-colors duration-200"
           >
             <span className="text-sm font-mono-data text-muted-foreground shrink-0 w-14">
