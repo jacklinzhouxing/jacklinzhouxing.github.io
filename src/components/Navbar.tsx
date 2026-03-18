@@ -1,18 +1,18 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-const navItems = ["About", "Research", "Work", "Contact"];
+const navItems = ["Home", "Research", "Publications", "Contact"];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-[var(--nav-bg)] backdrop-blur-md border-b border-border/50">
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="font-display text-lg font-semibold text-foreground">
-          Dr. Aris Thorne
+    <nav className="sticky top-0 z-50 w-full bg-background/90 backdrop-blur-sm border-b border-border">
+      <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+        <a href="#home" className="font-serif-display text-lg font-semibold text-foreground">
+          Prof. Jonathan Harwell
         </a>
-        <div className="hidden md:flex gap-8 text-sm font-medium text-muted-foreground">
+        <div className="hidden md:flex gap-8 text-sm font-medium text-muted-foreground tracking-wide">
           {navItems.map((item) => (
             <a
               key={item}
@@ -32,7 +32,7 @@ const Navbar = () => {
         </button>
       </div>
       {mobileOpen && (
-        <div className="md:hidden border-t border-border/50 bg-card px-6 py-4 space-y-3">
+        <div className="md:hidden border-t border-border bg-background px-6 py-4 space-y-3">
           {navItems.map((item) => (
             <a
               key={item}
