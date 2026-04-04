@@ -9,34 +9,37 @@ const fadeUp = {
 };
 
 const HomeSection = () => (
-  <section id="about" className="py-20 md:py-28">
+  <section id="home" className="py-20 md:py-28">
     <div className="max-w-3xl mx-auto px-6">
       <motion.div {...fadeUp} className="flex flex-col md:flex-row gap-10 md:gap-14 items-start">
         <div className="shrink-0">
           <img
             src={headshot}
-            alt="Professor Jonathan Harwell"
+            alt="Professional headshot"
             className="w-40 h-48 md:w-48 md:h-56 object-cover rounded-sm shadow-md"
           />
         </div>
         <div className="space-y-5">
           <div>
             <h1 className="text-3xl md:text-4xl font-serif-display font-semibold text-foreground leading-tight">
-              Jonathan Harwell
+              About Me
             </h1>
             <p className="text-primary font-medium mt-1.5 text-sm tracking-wide">
-              Professor of Political Economy
+              An Wang Postdoctoral Fellow
             </p>
             <p className="text-muted-foreground text-sm mt-0.5">
-              Department of Government · Harvard University
+              Fairbank Center for Chinese Studies · Harvard University
             </p>
           </div>
           <div className="w-12 h-px bg-primary/40" />
           <p className="text-foreground/80 leading-relaxed text-[15px]">
-            I study the political economy of development, with a focus on how institutions shape economic outcomes in post-colonial states. My work draws on archival research, field experiments, and formal theory to understand the persistence of inequality and the conditions under which reform is possible.
+            I am an An Wang Postdoctoral Fellow at the <strong className="font-semibold text-foreground">Fairbank Center for Chinese Studies, Harvard University</strong>, and an incoming assistant professor at the <strong className="font-semibold text-foreground">Division of Public Policy, Hong Kong University of Science and Technology</strong>. I hold a Ph.D. in History and Sociology of Technology and Science and a graduate certificate in public policy from Georgia Institute of Technology.
           </p>
           <p className="text-foreground/80 leading-relaxed text-[15px]">
-            I received my Ph.D. from Princeton University and held fellowships at the Institute for Advanced Study and the Hoover Institution before joining the Harvard faculty. I currently serve as director of the Program on Governance and Development.
+            My research spans sociology of technology and work, science and technology studies (STS), and technology and innovation policy in China, focusing on the social implications and governance of the platform economy, digital infrastructure, and digital labor.
+          </p>
+          <p className="text-foreground/80 leading-relaxed text-[15px]">
+            Based on longitudinal ethnographic research, my dissertation traces and analyzes how digital platforms, gig workers, and tech workers interact with each other and navigate the contingent regulatory environment amid the compressed socioeconomic transition, geopolitical tension, and pervasive techno-nationalism and techno-developmentalism in China.
           </p>
         </div>
       </motion.div>

@@ -34,24 +34,27 @@ const ContactSection = () => {
         >
           <div className="space-y-6">
             <p className="text-[15px] text-foreground/80 leading-relaxed">
-              I welcome inquiries from prospective graduate students, postdoctoral researchers, and colleagues interested in collaboration. Please feel free to reach out.
+              I welcome inquiries from prospective collaborators, graduate students, and colleagues. Please feel free to reach out.
             </p>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <Mail size={16} className="text-primary shrink-0" />
-                <span>jharwell@gov.harvard.edu</span>
+            <div className="space-y-4 text-sm">
+              <div className="flex items-start gap-3 text-muted-foreground">
+                <MapPin size={16} className="text-primary shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-medium text-foreground mb-0.5">Harvard University</p>
+                  <p>Office S134, CGIS South Building</p>
+                </div>
               </div>
               <div className="flex items-start gap-3 text-muted-foreground">
                 <MapPin size={16} className="text-primary shrink-0 mt-0.5" />
-                <span>
-                  1737 Cambridge Street, Room 406<br />
-                  Cambridge, MA 02138
-                </span>
+                <div>
+                  <p className="font-medium text-foreground mb-0.5">HKUST (incoming)</p>
+                  <p>Division of Public Policy</p>
+                </div>
               </div>
-            </div>
-            <div className="text-sm text-muted-foreground">
-              <p className="font-medium text-foreground mb-1">Office Hours</p>
-              <p>Wednesdays, 2:00–4:00 PM (by appointment)</p>
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <Mail size={16} className="text-primary shrink-0" />
+                <span>email@example.edu</span>
+              </div>
             </div>
           </div>
           <form onSubmit={handleSubmit} className="space-y-4">
