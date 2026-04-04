@@ -16,7 +16,7 @@ const englishMedia = [
 const chineseMedia = [
   { year: 2025, title: "技术创新背后的劳动变迁", outlet: "信睿周报 (TheThinker Weekly)", url: "#" },
   { year: 2025, title: "平台经济从何处来，往何处去?", outlet: "信睿周报 (TheThinker Weekly)", url: "#" },
-  { year: 2023, title: "严肃谈一下"工作不断贬值"这个问题", outlet: "地球知识局 (Bureau of Knowledge about the Earth)", url: "#" },
+  { year: 2023, title: '严肃谈一下"工作不断贬值"这个问题', outlet: "地球知识局 (Bureau of Knowledge about the Earth)", url: "#" },
 ];
 
 const fadeUp = {
