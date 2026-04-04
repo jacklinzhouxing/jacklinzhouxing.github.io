@@ -27,7 +27,9 @@ const CVSection = () => (
 
       <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.05 }} className="mb-10">
         <a
-          href="#"
+          href="/Xing_Full CV_Apr 2026.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-2.5 px-6 py-3 rounded-sm bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 active:scale-[0.98] transition-all duration-200 shadow-sm"
         >
           <Download size={16} />
