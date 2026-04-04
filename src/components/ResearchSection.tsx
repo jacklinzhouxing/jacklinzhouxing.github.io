@@ -44,11 +44,12 @@ const ResearchSection = () => (
         {pillars.map((item, i) => (
           <motion.div
             key={item.title}
+            id={`pillar-${i}`}
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const, delay: i * 0.08 }}
-            className="border border-border rounded-sm p-6 bg-card"
+            className="border border-border rounded-sm p-6 bg-card scroll-mt-24"
           >
             <item.icon size={20} className="text-primary mb-3" />
             <h3 className="text-base font-semibold text-foreground font-serif-display mb-2">
