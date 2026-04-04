@@ -31,12 +31,6 @@ const HomeSection = () => (
             <h1 className="text-3xl md:text-4xl font-serif-display font-semibold text-foreground leading-tight">
               Jack Linzhou Xing 邢麟舟
             </h1>
-            <p className="text-primary font-medium mt-1.5 text-sm tracking-wide">
-              An Wang Postdoctoral Fellow
-            </p>
-            <p className="text-muted-foreground text-sm mt-0.5">
-              Fairbank Center for Chinese Studies · Harvard University
-            </p>
           </div>
           <div className="w-12 h-px bg-primary/40" />
           <p className="text-foreground/80 leading-relaxed text-[15px]">
