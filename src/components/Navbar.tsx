@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 w-full bg-background/90 backdrop-blur-sm border-b border-border">
       <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
         <a href="#home" className="font-serif-display text-lg font-semibold text-foreground">
-          Academic Portfolio
+          Jack Linzhou Xing 邢麟舟
         </a>
         <div className="hidden md:flex gap-7 text-sm font-medium text-muted-foreground tracking-wide">
           {navItems.map((item) => (
