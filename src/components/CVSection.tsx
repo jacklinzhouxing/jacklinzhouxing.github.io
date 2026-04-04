@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
-import { FileText } from "lucide-react";
+import { FileText, Download } from "lucide-react";
 
 const cvEntries = [
-  { category: "Education", items: ["Ph.D. in Political Science, Princeton University, 2012", "A.B. in Economics, Harvard College, 2006 (magna cum laude)"] },
-  { category: "Appointments", items: ["Professor of Political Economy, Harvard University, 2020–present", "Associate Professor, Harvard University, 2016–2020", "Fellow, Institute for Advanced Study, 2014–2016"] },
-  { category: "Selected Honors", items: ["Carnegie Fellowship, 2025", "APSA Best Article Award, 2023", "Sloan Research Fellowship, 2019"] },
+  { category: "Education", items: ["Ph.D. in History and Sociology of Technology and Science, Georgia Institute of Technology", "Graduate Certificate in Public Policy, Georgia Institute of Technology"] },
+  { category: "Appointments", items: ["Incoming Assistant Professor, Division of Public Policy, HKUST", "An Wang Postdoctoral Fellow, Fairbank Center for Chinese Studies, Harvard University"] },
 ];
 
 const fadeUp = {
@@ -22,16 +21,20 @@ const CVSection = () => (
           <h2 className="text-2xl md:text-3xl font-serif-display font-semibold text-foreground">
             Curriculum Vitae
           </h2>
-          <a
-            href="#"
-            className="inline-flex items-center gap-1.5 text-xs font-medium text-primary hover:text-primary/80 transition-colors"
-          >
-            <FileText size={14} />
-            Download PDF
-          </a>
         </div>
-        <div className="w-12 h-px bg-primary/40 mb-10" />
+        <div className="w-12 h-px bg-primary/40 mb-8" />
       </motion.div>
+
+      <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.05 }} className="mb-10">
+        <a
+          href="#"
+          className="inline-flex items-center gap-2.5 px-6 py-3 rounded-sm bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 active:scale-[0.98] transition-all duration-200 shadow-sm"
+        >
+          <Download size={16} />
+          Download CV (PDF)
+        </a>
+      </motion.div>
+
       <div className="space-y-8">
         {cvEntries.map((section, i) => (
           <motion.div
@@ -46,7 +49,8 @@ const CVSection = () => (
             </h3>
             <ul className="space-y-1.5">
               {section.items.map((item) => (
-                <li key={item} className="text-sm text-muted-foreground leading-relaxed">
+                <li key={item} className="text-sm text-muted-foreground leading-relaxed flex items-start gap-2">
+                  <FileText size={13} className="text-primary/60 shrink-0 mt-0.5" />
                   {item}
                 </li>
               ))}

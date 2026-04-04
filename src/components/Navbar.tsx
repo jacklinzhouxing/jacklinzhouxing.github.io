@@ -1,7 +1,14 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-const navItems = ["About", "News", "Research", "CV", "Contact"];
+const navItems = [
+  { label: "Home", href: "#home" },
+  { label: "Updates", href: "#updates" },
+  { label: "Research", href: "#research" },
+  { label: "Public Engagement", href: "#engagement" },
+  { label: "CV", href: "#cv" },
+  { label: "Contact", href: "#contact" },
+];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -10,16 +17,16 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 w-full bg-background/90 backdrop-blur-sm border-b border-border">
       <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
         <a href="#home" className="font-serif-display text-lg font-semibold text-foreground">
-          Prof. Jonathan Harwell
+          Academic Portfolio
         </a>
-        <div className="hidden md:flex gap-8 text-sm font-medium text-muted-foreground tracking-wide">
+        <div className="hidden md:flex gap-7 text-sm font-medium text-muted-foreground tracking-wide">
           {navItems.map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
               className="hover:text-primary transition-colors duration-200"
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>
@@ -35,12 +42,12 @@ const Navbar = () => {
         <div className="md:hidden border-t border-border bg-background px-6 py-4 space-y-3">
           {navItems.map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
               className="block text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               onClick={() => setMobileOpen(false)}
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>
