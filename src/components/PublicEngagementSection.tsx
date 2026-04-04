@@ -7,7 +7,7 @@ const englishMedia = [
   { year: 2022, title: "Why do some taxi drivers in China turn down e-hailing?", outlet: "MoLab Inventory of Mobilities and Socioeconomic Changes", url: "https://www.molab-inventory.org/" },
   { year: 2021, title: "Tracing apps and digital divide (Series 1–3)", outlet: "Technology of Things", url: "#" },
   { year: 2021, title: "Health QR code: Technological and/or social infrastructure about pandemic control and privacy", outlet: "Technology of Things", url: "#" },
-  { year: 2021, title: "Facial recognition: Surveillance with "artificial" intelligence", outlet: "Technology of Things", url: "#" },
+  { year: 2021, title: 'Facial recognition: Surveillance with "artificial" intelligence', outlet: "Technology of Things", url: "#" },
   { year: 2020, title: 'The "Caring Class" behind the "Grid Reaction" against Coronavirus', outlet: "Oxford COMPAS", url: "https://www.compas.ox.ac.uk/" },
   { year: 2020, title: "Hive box: Controversies over automation, privatization, and negotiability", outlet: "Technology of Things", url: "#" },
   { year: 2020, title: "Food delivery platform: Service quality, algorithm, infrastructure, and people", outlet: "Technology of Things", url: "#" },
