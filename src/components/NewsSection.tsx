@@ -2,10 +2,8 @@ import { motion } from "framer-motion";
 import { Newspaper } from "lucide-react";
 
 const newsItems = [
-  { date: "Mar 2026", text: "Invited keynote at the Annual Conference on Institutional Economics, Berlin." },
-  { date: "Jan 2026", text: "New paper accepted at the American Political Science Review on colonial revenue systems." },
-  { date: "Oct 2025", text: "Awarded the Carnegie Fellowship for research on governance and development." },
-  { date: "Jun 2025", text: "Presented at the NBER Summer Institute, Political Economy workshop." },
+  { date: "March 2026", text: "Organized 'Technology and Society in/through Global China' Workshop at Harvard University." },
+  { date: "August 2025", text: "Joined Fairbank Center for Chinese Studies as An Wang Postdoctoral Fellow." },
 ];
 
 const fadeUp = {
@@ -16,11 +14,11 @@ const fadeUp = {
 };
 
 const NewsSection = () => (
-  <section id="news" className="py-20 border-t border-border">
+  <section id="updates" className="py-20 border-t border-border">
     <div className="max-w-3xl mx-auto px-6">
       <motion.div {...fadeUp}>
         <h2 className="text-2xl md:text-3xl font-serif-display font-semibold text-foreground mb-2">
-          News
+          Updates
         </h2>
         <div className="w-12 h-px bg-primary/40 mb-10" />
       </motion.div>
