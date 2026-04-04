@@ -8,8 +8,15 @@ const fadeUp = {
   transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
 };
 
+const researchInterests = [
+  { label: "Technology, automation, and work", anchor: "#pillar-0" },
+  { label: "Digital infrastructure", anchor: "#pillar-1" },
+  { label: "Strategies and governance of emerging technologies and tech firms", anchor: "#pillar-2" },
+  { label: "An interdisciplinary understanding of technology and innovation", anchor: "#pillar-3" },
+];
+
 const HomeSection = () => (
-  <section id="home" className="py-20 md:py-28">
+  <section id="about" className="py-20 md:py-28">
     <div className="max-w-3xl mx-auto px-6">
       <motion.div {...fadeUp} className="flex flex-col md:flex-row gap-10 md:gap-14 items-start">
         <div className="shrink-0">
@@ -41,6 +48,27 @@ const HomeSection = () => (
           <p className="text-foreground/80 leading-relaxed text-[15px]">
             Based on longitudinal ethnographic research, my dissertation traces and analyzes how digital platforms, gig workers, and tech workers interact with each other and navigate the contingent regulatory environment amid the compressed socioeconomic transition, geopolitical tension, and pervasive techno-nationalism and techno-developmentalism in China.
           </p>
+          <div className="pt-2">
+            <p className="text-foreground/80 leading-relaxed text-[15px] font-medium">
+              My specific research interests include the social and policy implications of the following:
+            </p>
+            <ul className="mt-3 space-y-2 list-disc list-inside">
+              {researchInterests.map((item) => (
+                <li key={item.anchor} className="text-[15px] text-foreground/80 leading-relaxed">
+                  <a
+                    href={item.anchor}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.querySelector(item.anchor)?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                    className="text-primary hover:text-primary/80 underline underline-offset-2 transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </motion.div>
     </div>
