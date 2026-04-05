@@ -2,21 +2,23 @@ import { motion } from "framer-motion";
 import { Globe, Languages } from "lucide-react";
 
 const englishMedia = [
-  { year: 2026, title: '"It feels like Squid Game": China\'s workers scramble to keep up in the AI race', outlet: "Rest of World", type: "Interview", url: "https://restofworld.org/2026/china-ai-race-workers/" },
-  { year: 2023, title: "Taxi versus Didi", outlet: "Konfuzius Institut", url: "https://www.konfuzius-institut-magazin.de/taxi-versus-didi/" },
-  { year: 2022, title: "Why do some taxi drivers in China turn down e-hailing?", outlet: "MoLab Inventory of Mobilities and Socioeconomic Changes", url: "https://www.molab-inventory.org/" },
-  { year: 2021, title: "Tracing apps and digital divide (Series 1–3)", outlet: "Technology of Things", url: "#" },
-  { year: 2021, title: "Health QR code: Technological and/or social infrastructure about pandemic control and privacy", outlet: "Technology of Things", url: "#" },
-  { year: 2021, title: 'Facial recognition: Surveillance with "artificial" intelligence', outlet: "Technology of Things", url: "#" },
-  { year: 2020, title: 'The "Caring Class" behind the "Grid Reaction" against Coronavirus', outlet: "Oxford COMPAS", url: "https://www.compas.ox.ac.uk/" },
-  { year: 2020, title: "Hive box: Controversies over automation, privatization, and negotiability", outlet: "Technology of Things", url: "#" },
-  { year: 2020, title: "Food delivery platform: Service quality, algorithm, infrastructure, and people", outlet: "Technology of Things", url: "#" },
+  { year: 2026, title: '"It feels like Squid Game": China\'s workers scramble to keep up in the AI race', outlet: "Rest of World", type: "Interview", url: "https://restofworld.org/2026/china-ai-anxiety-openclaw-jobs-redundancy/" },
+  { year: 2023, title: "Taxi versus Didi", outlet: "Konfuzius Institut", url: "https://issuu.com/konfuziusinstitut/docs/2023-01_ki-magazin" },
+  { year: 2022, title: "Why do some taxi drivers in China turn down e-hailing?", outlet: "MoLab Inventory of Mobilities and Socioeconomic Changes", url: "https://www.eth.mpg.de/6106025/why_do_some_taxi_drivers_in_China_turn_down_e-hailing" },
+  { year: 2021, title: "Tracing apps and digital divide (Part 1)", outlet: "Technology of Things", url: "https://mmea.hku.hk/tracing-apps-and-digital-divide-1-different-technological-designs/" },
+  { year: 2021, title: "Tracing apps and digital divide (Part 2)", outlet: "Technology of Things", url: "https://mmea.hku.hk/tracing-apps-and-digital-divide-2-path-dependency-and-unintended-consequences-in-technology-design/" },
+  { year: 2021, title: "Tracing apps and digital divide (Part 3)", outlet: "Technology of Things", url: "https://mmea.hku.hk/tracing-apps-and-digital-divide-3-supplementary-measures-user-involvement-and-the-ethical-responsibility-of-designers/" },
+  { year: 2021, title: "Health QR code: Technological and/or social infrastructure about pandemic control and privacy", outlet: "Technology of Things", url: "https://mmea.hku.hk/health-qr-code-technological-and-or-social-infrastructure-about-pandemic-control-and-privacy/" },
+  { year: 2021, title: 'Facial recognition: Surveillance with "artificial" intelligence', outlet: "Technology of Things", url: "https://mmea.hku.hk/facial-recognition-surveillance-with-artificial-intelligence/" },
+  { year: 2020, title: 'The "Caring Class" behind the "Grid Reaction" against Coronavirus', outlet: "Oxford COMPAS", url: "https://www.compas.ox.ac.uk/2020/the-caring-class-behind-the-grid-reaction-against-coronavirus/" },
+  { year: 2020, title: "Hive box: Controversies over automation, privatization, and negotiability", outlet: "Technology of Things", url: "https://mmea.hku.hk/hive-box-controversies-over-automation-privatization-and-negotiability/" },
+  { year: 2020, title: "Food delivery platform: Service quality, algorithm, infrastructure, and people", outlet: "Technology of Things", url: "https://mmea.hku.hk/food-delivery-platforms-service-quality-algorithm-infrastructure-and-people/" },
 ];
 
 const chineseMedia = [
-  { year: 2025, title: "技术创新背后的劳动变迁", outlet: "信睿周报 (TheThinker Weekly)", url: "#" },
-  { year: 2025, title: "平台经济从何处来，往何处去?", outlet: "信睿周报 (TheThinker Weekly)", url: "#" },
-  { year: 2023, title: '严肃谈一下"工作不断贬值"这个问题', outlet: "地球知识局 (Bureau of Knowledge about the Earth)", url: "#" },
+  { year: 2025, title: "技术创新背后的劳动变迁", outlet: "信睿周报 (TheThinker Weekly)", url: "https://mp.weixin.qq.com/s/USg1rESJu4MdVm1OWWQqcw" },
+  { year: 2025, title: "平台经济从何处来，往何处去?", outlet: "信睿周报 (TheThinker Weekly)", url: "https://mp.weixin.qq.com/s/t899a93AWaXVBTiSB1Df6g" },
+  { year: 2023, title: '严肃谈一下"工作不断贬值"这个问题', outlet: "地球知识局 (Bureau of Knowledge about the Earth)", url: "https://mp.weixin.qq.com/s/hU7s1dJMjXlH2iQl3u_QEA" },
 ];
 
 const fadeUp = {
