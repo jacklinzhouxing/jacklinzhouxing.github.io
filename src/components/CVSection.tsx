@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Download, Briefcase, GraduationCap, BookOpen, Award } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
 
 const fadeUp = {
   initial: { opacity: 0, y: 16 },
@@ -9,42 +10,6 @@ const fadeUp = {
 };
 
 const CV_URL = "/Xing_Full%20CV_Apr%202026.pdf";
-
-const highlights = [
-  {
-    icon: Briefcase,
-    title: "Employment",
-    items: [
-      "An Wang Postdoctoral Fellow, Fairbank Center for Chinese Studies, Harvard University",
-      "Incoming Assistant Professor, Division of Public Policy, Hong Kong University of Science and Technology",
-    ],
-  },
-  {
-    icon: GraduationCap,
-    title: "Education",
-    items: [
-      "Ph.D. in Sociology, Georgia Institute of Technology (2025)",
-      "M.Phil. (Science & Technology Studies), The University of Hong Kong",
-      "M.A. in Social Sciences, Hong Kong University of Science and Technology",
-      "B.B.A., The University of Hong Kong",
-    ],
-  },
-  {
-    icon: BookOpen,
-    title: "Selected Publications",
-    items: [
-      <>Featured journal articles in <em>Research Policy</em>, <em>Science, Technology, &amp; Human Values</em>, <em>Big Data &amp; Society</em>, <em>Chinese Journal of Communications</em>, <em>Mobility</em>, <em>Transfers</em>, <em>自然辩证法通讯</em>, <em>自然辩证法研究</em></>,
-    ],
-  },
-  {
-    icon: Award,
-    title: "Key Awards",
-    items: [
-      "An Wang Postdoctoral Fellowship (Harvard)",
-      "Co-I for General Research Fund (HK RGC)",
-    ],
-  },
-];
 
 const CVSection = () => (
   <section id="cv" className="py-20 border-t border-border bg-muted/20">
@@ -71,33 +36,105 @@ const CVSection = () => (
 
       {/* Two-column hybrid layout */}
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
-        {/* Column 1 – Visual Highlights */}
+        {/* Column 1 – Academic Highlights */}
         <motion.div
           {...fadeUp}
           transition={{ ...fadeUp.transition, delay: 0.1 }}
-          className="lg:col-span-2 space-y-6"
+          className="lg:col-span-2 space-y-0"
         >
-          {highlights.map((section) => (
-            <div
-              key={section.title}
-              className="rounded-sm border border-border bg-background p-5 shadow-sm"
-            >
+          <div className="rounded-sm border border-border bg-background p-6 shadow-sm">
+            {/* Employment */}
+            <div className="mb-5">
               <div className="flex items-center gap-2.5 mb-3">
-                <section.icon size={18} className="text-primary shrink-0" />
-                <h3 className="font-serif-display font-semibold text-foreground text-base">
-                  {section.title}
-                </h3>
+                <Briefcase size={18} className="text-primary shrink-0" />
+                <h3 className="font-serif-display font-semibold text-foreground text-base">Employment</h3>
               </div>
               <ul className="space-y-2 text-sm text-muted-foreground leading-relaxed">
-                {section.items.map((item, i) => (
-                  <li key={i} className="flex gap-2">
-                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
+                <li className="flex gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
+                  <span>Incoming Assistant Professor, Division of Public Policy, Hong Kong University of Science and Technology</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
+                  <span>An Wang Postdoctoral Fellow, Fairbank Center for Chinese Studies, Harvard University</span>
+                </li>
               </ul>
             </div>
-          ))}
+
+            <Separator className="my-5" />
+
+            {/* Education */}
+            <div className="mb-5">
+              <div className="flex items-center gap-2.5 mb-3">
+                <GraduationCap size={18} className="text-primary shrink-0" />
+                <h3 className="font-serif-display font-semibold text-foreground text-base">Education</h3>
+              </div>
+              <ul className="space-y-2 text-sm text-muted-foreground leading-relaxed">
+                <li className="flex gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
+                  <span>PhD, Sociology, Georgia Institute of Technology, 2025 (Graduate Certificate in Public Policy)</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
+                  <span>MPhil, Science &amp; Technology Studies, The University of Hong Kong, 2019</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
+                  <span>MA, Social Science, Hong Kong University of Science and Technology, 2017</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
+                  <span>BBA (Acc &amp; Fin), The University of Hong Kong, 2016</span>
+                </li>
+              </ul>
+            </div>
+
+            <Separator className="my-5" />
+
+            {/* Selected Publications */}
+            <div className="mb-5">
+              <div className="flex items-center gap-2.5 mb-3">
+                <BookOpen size={18} className="text-primary shrink-0" />
+                <h3 className="font-serif-display font-semibold text-foreground text-base">Selected Publications</h3>
+              </div>
+              <ul className="space-y-3 text-sm text-muted-foreground leading-relaxed">
+                <li>
+                  <strong className="text-foreground">Xing, J. L.</strong>, &amp; Zheng, E. L. (2026). Patchwork surveillance and accountability labor: China's Health Code Systems during COVID-19. <em>Big Data &amp; Society</em>, 13(1).
+                </li>
+                <li>
+                  <strong className="text-foreground">Xing, J. L.</strong>, Zhang, J., &amp; Santos, G. (2026). Mythology of wealth in the platform economy: The case of the ride-hailing platform Didi in China. <em>Science, Technology, &amp; Human Values</em>.
+                </li>
+                <li>
+                  Zhang, J., &amp; <strong className="text-foreground">Xing, J. L.</strong> (2025). Towards a processual approach to the infrastructuralization of digital platforms: The case of WeChat. <em>Chinese Journal of Communication</em>, 0(0), 1–18.
+                </li>
+                <li>
+                  <strong className="text-foreground">Xing, J. L.</strong>, &amp; Sharif, N. (2025). A processual approach to skill changes in digital automation: The case of the platform economy in the service sector. <em>Research Policy</em>, 54(4): 105190.
+                </li>
+                <li>
+                  <strong className="text-foreground">Xing, J. L.</strong> (2022). Driving as communities: Chinese taxi drivers' technology, job, and mobility choices under the pressure of e-hailing. <em>Mobilities</em>, 17(5): 676-694.
+                </li>
+                <li>
+                  <strong className="text-foreground">Xing, J. L.</strong>, &amp; Sharif, N. (2020). From creative destruction to creative appropriation: A comprehensive framework. <em>Research Policy</em>, 49(7): 104060.
+                </li>
+              </ul>
+            </div>
+
+            <Separator className="my-5" />
+
+            {/* Selected Awards */}
+            <div>
+              <div className="flex items-center gap-2.5 mb-3">
+                <Award size={18} className="text-primary shrink-0" />
+                <h3 className="font-serif-display font-semibold text-foreground text-base">Selected Awards</h3>
+              </div>
+              <ul className="space-y-2 text-sm text-muted-foreground leading-relaxed">
+                <li className="flex gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
+                  <span>(Co-I) HK RGC General Research Fund (Ref.: 11600724): An Ethnographic, Processual Study of Platformized Lives: WeChat in China as a Case Study</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </motion.div>
 
         {/* Column 2 – Embedded PDF */}
