@@ -16,7 +16,7 @@ const researchInterests = [
 ];
 
 const HomeSection = () => (
-  <section id="about" className="py-20 md:py-28">
+  <section id="home" className="py-20 md:py-28 scroll-mt-16">
     <div className="max-w-3xl mx-auto px-6">
       <motion.div {...fadeUp} className="flex flex-col md:flex-row gap-10 md:gap-14 items-start">
         <div className="shrink-0">
