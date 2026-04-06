@@ -18,11 +18,27 @@ const socialLinks = [
 
 const ContactSection = () => {
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 3000);
+    setSubmitting(true);
+    const form = e.currentTarget;
+    try {
+      const res = await fetch("https://formspree.io/f/mpqooyev", {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setSent(true);
+        form.reset();
+      }
+    } catch {
+      // silently fail
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -49,29 +65,27 @@ const ContactSection = () => {
                 <div>
                   <p className="font-medium text-foreground mb-0.5">Harvard University</p>
                   <p>Office S134, CGIS South Building</p>
+                  <p>1730 Cambridge St., Cambridge, MA</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 text-muted-foreground">
                 <MapPin size={16} className="text-primary shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-medium text-foreground mb-0.5">HKUST (incoming)</p>
+                  <p className="font-medium text-foreground mb-0.5">HKUST (Incoming)</p>
                   <p>Division of Public Policy</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail size={16} className="text-primary shrink-0" />
-                <a
-                  href="mailto:lxing@fas.harvard.edu"
-                  className="hover:text-primary transition-colors"
-                >
+                <a href="mailto:lxing@fas.harvard.edu" className="hover:text-primary transition-colors">
                   lxing@fas.harvard.edu
                 </a>
               </div>
             </div>
 
-            {/* Social */}
+            {/* Connect */}
             <div className="pt-2 space-y-3">
-              <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Social</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Connect</p>
               <div className="flex flex-wrap gap-x-5 gap-y-3 text-sm">
                 {socialLinks.map((s) => {
                   const Icon = s.icon;
@@ -96,23 +110,44 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">Name</label>
-              <input id="name" type="text" required className="w-full px-3 py-2 rounded-sm bg-card border border-border text-foreground text-sm focus:outline-none focus:ring-1 focus:ring-ring transition-shadow" />
+          {sent ? (
+            <div className="flex flex-col items-center justify-center text-center space-y-3 py-12">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <Check size={24} className="text-primary" />
+              </div>
+              <p className="text-lg font-serif-display font-semibold text-foreground">Thank you!</p>
+              <p className="text-sm text-muted-foreground">Your message has been sent. I'll get back to you soon.</p>
+              <button
+                onClick={() => setSent(false)}
+                className="text-sm text-primary hover:underline mt-2"
+              >
+                Send another message
+              </button>
             </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1">Email</label>
-              <input id="email" type="email" required className="w-full px-3 py-2 rounded-sm bg-card border border-border text-foreground text-sm focus:outline-none focus:ring-1 focus:ring-ring transition-shadow" />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1">Message</label>
-              <textarea id="message" rows={4} required className="w-full px-3 py-2 rounded-sm bg-card border border-border text-foreground text-sm focus:outline-none focus:ring-1 focus:ring-ring transition-shadow resize-none" />
-            </div>
-            <button type="submit" className="inline-flex items-center gap-2 px-5 py-2 rounded-sm bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 active:scale-[0.98] transition-all duration-200">
-              {sent ? (<><Check size={15} />Sent</>) : (<><Send size={15} />Send Message</>)}
-            </button>
-          </form>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">Name</label>
+                <input id="name" name="name" type="text" required className="w-full px-3 py-2 rounded-sm bg-card border border-border text-foreground text-sm focus:outline-none focus:ring-1 focus:ring-ring transition-shadow" />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1">Email</label>
+                <input id="email" name="email" type="email" required className="w-full px-3 py-2 rounded-sm bg-card border border-border text-foreground text-sm focus:outline-none focus:ring-1 focus:ring-ring transition-shadow" />
+              </div>
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1">Message</label>
+                <textarea id="message" name="message" rows={4} required className="w-full px-3 py-2 rounded-sm bg-card border border-border text-foreground text-sm focus:outline-none focus:ring-1 focus:ring-ring transition-shadow resize-none" />
+              </div>
+              <button
+                type="submit"
+                disabled={submitting}
+                className="inline-flex items-center gap-2 px-5 py-2 rounded-sm bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 active:scale-[0.98] transition-all duration-200 disabled:opacity-60"
+              >
+                <Send size={15} />
+                {submitting ? "Sending…" : "Send Message"}
+              </button>
+            </form>
+          )}
         </motion.div>
       </div>
     </section>
