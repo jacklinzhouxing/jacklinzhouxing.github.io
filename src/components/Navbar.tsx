@@ -3,10 +3,10 @@ import { Menu, X } from "lucide-react";
 
 const navItems = [
   { label: "Home", href: "#home" },
-  { label: "Updates", href: "#updates" },
+  { label: "News", href: "#updates" },
   { label: "Research", href: "#research" },
   { label: "Teaching", href: "#teaching" },
-  { label: "Public Engagement", href: "#engagement" },
+  { label: "Engagement", href: "#engagement" },
   { label: "CV", href: "#cv" },
   { label: "Contact", href: "#contact" },
 ];
@@ -16,11 +16,11 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-background/90 backdrop-blur-sm border-b border-border">
-      <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
-        <a href="#home" className="font-serif-display text-lg font-semibold text-foreground">
-          Jack Linzhou Xing 邢麟舟
+      <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+        <a href="#home" className="font-serif-display text-lg font-semibold text-foreground whitespace-nowrap">
+          Jack Linzhou Xing
         </a>
-        <div className="hidden md:flex gap-7 text-sm font-medium text-muted-foreground tracking-wide">
+        <div className="hidden md:flex gap-5 text-[13px] lg:text-sm font-medium text-muted-foreground tracking-wide">
           {navItems.map((item) => (
             <a
               key={item.label}
