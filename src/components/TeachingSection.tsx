@@ -1,14 +1,6 @@
 import { motion } from "framer-motion";
 import { BookOpen } from "lucide-react";
 
-const teachingInterests = [
-  "Sociology of Technology and Work",
-  "Science, Technology, and Society (STS)",
-  "Innovation Policy",
-  "Digital Governance",
-  "Chinese Society",
-];
-
 const TeachingSection = () => (
   <section id="teaching" className="py-20 px-6 bg-muted/30">
     <div className="max-w-3xl mx-auto">
@@ -27,54 +19,57 @@ const TeachingSection = () => (
         <div className="mb-10">
           <h3 className="font-serif text-lg font-semibold text-foreground mb-4">Teaching Interests</h3>
           <p className="text-muted-foreground leading-relaxed">
-            {teachingInterests.join("; ")}.
+            Sociology of Technology and Work; Science, Technology, and Society (STS); Innovation Policy; Digital Governance; and Chinese Society.
           </p>
         </div>
 
-        {/* Teaching Experience */}
+        {/* Guest Lecturer */}
+        <div className="mb-8">
+          <h3 className="font-serif text-lg font-semibold text-foreground mb-6">Guest Lecturer</h3>
+          <ul className="space-y-4 text-muted-foreground">
+            {[
+              { course: "Contemporary Chinese Society", school: "Harvard University, 2026", lecture: "How to build a platform in China?" },
+              { course: "Theorizing Digital Capitalism", school: "Harvard University, 2025", lecture: "Three principles of studying platforms elsewhere" },
+              { course: "Understanding Society, Economy, and Governance in the Digital Era", school: "HKUST, 2025", lecture: "Speed, time, and infrastructure in the digital era" },
+              { course: "Technology and Society", school: "Northeastern University, 2025", lecture: "The platform economy and future of work" },
+              { course: "Urban Development and Sustainable Cities", school: "PG, City University of Hong Kong, 2024", lecture: "The platform economy and automation" },
+              { course: "Traditions of Inquiry in Social Sciences", school: "City University of Hong Kong, 2024", lecture: "Sociological thoughts on science and technology" },
+              { course: "Introduction to Sociology", school: "Georgia Institute of Technology, 2022–2023", lecture: "Testing the promise of the gig economy\" & \"Technology and future of work" },
+            ].map((item, i) => (
+              <li key={i} className="pl-5 border-l-2 border-primary/20">
+                <span className="font-serif font-semibold text-foreground">{item.course}</span>
+                <span className="text-sm text-muted-foreground ml-1">({item.school})</span>
+                <br />
+                <span className="text-sm italic text-muted-foreground/80">Lecture: "{item.lecture}"</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Teaching Assistant */}
+        <div className="mb-8">
+          <h3 className="font-serif text-lg font-semibold text-foreground mb-6">Teaching Assistant</h3>
+          <ul className="space-y-3 text-muted-foreground">
+            <li className="pl-5 border-l-2 border-primary/20">
+              <span className="font-serif font-semibold text-foreground">Introduction to Sociology</span>
+              <span className="text-sm ml-1">(Georgia Institute of Technology, 2022–2023)</span>
+            </li>
+            <li className="pl-5 border-l-2 border-primary/20">
+              <span className="font-serif font-semibold text-foreground">Science, Technology, Medicine and Race</span>
+              <span className="text-sm ml-1">(Georgia Institute of Technology, 2021)</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Tutorial Instructor */}
         <div>
-          <h3 className="font-serif text-lg font-semibold text-foreground mb-6">Teaching Experience</h3>
-
-          {/* Guest Lecturer */}
-          <div className="mb-6">
-            <h4 className="font-serif text-base font-medium text-foreground mb-3">Guest Lecturer</h4>
-            <ul className="space-y-2 text-muted-foreground pl-5 list-disc">
-              <li>
-                <span className="font-medium text-foreground">Harvard University:</span>{" "}
-                "Contemporary Chinese Society" and "Theorizing Digital Capitalism" (2025–2026)
-              </li>
-              <li>
-                <span className="font-medium text-foreground">HKUST:</span>{" "}
-                "Understanding Society, Economy, and Governance in the Digital Era" (2025)
-              </li>
-              <li>
-                <span className="font-medium text-foreground">City University of Hong Kong:</span>{" "}
-                Guest lectures on platform economy and automation (2024)
-              </li>
-            </ul>
-          </div>
-
-          {/* Teaching Assistant */}
-          <div className="mb-6">
-            <h4 className="font-serif text-base font-medium text-foreground mb-3">Teaching Assistant</h4>
-            <ul className="space-y-2 text-muted-foreground pl-5 list-disc">
-              <li>
-                <span className="font-medium text-foreground">Georgia Institute of Technology:</span>{" "}
-                Introduction to Sociology; Science, Technology, Medicine and Race (2021–2023)
-              </li>
-            </ul>
-          </div>
-
-          {/* Tutorial Instructor */}
-          <div>
-            <h4 className="font-serif text-base font-medium text-foreground mb-3">Tutorial Instructor</h4>
-            <ul className="space-y-2 text-muted-foreground pl-5 list-disc">
-              <li>
-                <span className="font-medium text-foreground">The University of Hong Kong:</span>{" "}
-                "Technology, Power and Culture in the Global Age"
-              </li>
-            </ul>
-          </div>
+          <h3 className="font-serif text-lg font-semibold text-foreground mb-6">Tutorial Instructor</h3>
+          <ul className="space-y-3 text-muted-foreground">
+            <li className="pl-5 border-l-2 border-primary/20">
+              <span className="font-serif font-semibold text-foreground">Technology, Power and Culture in the Global Age</span>
+              <span className="text-sm ml-1">(The University of Hong Kong, 2018)</span>
+            </li>
+          </ul>
         </div>
       </motion.div>
     </div>
