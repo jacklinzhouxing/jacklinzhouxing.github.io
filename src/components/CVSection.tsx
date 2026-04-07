@@ -121,6 +121,22 @@ const CVSection = () => (
 
             <Separator className="my-5" />
 
+            {/* Professional Service */}
+            <div className="mb-5">
+              <div className="flex items-center gap-2.5 mb-3">
+                <Briefcase size={18} className="text-primary shrink-0" />
+                <h3 className="font-serif-display font-semibold text-foreground text-base">Professional Service</h3>
+              </div>
+              <ul className="space-y-2 text-sm text-muted-foreground leading-relaxed">
+                <li className="flex gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
+                  <span>Book Review Editor, <em>East Asian Science, Technology and Society: An International Journal</em> (2026–2028)</span>
+                </li>
+              </ul>
+            </div>
+
+            <Separator className="my-5" />
+
             {/* Selected Awards */}
             <div>
               <div className="flex items-center gap-2.5 mb-3">
@@ -131,6 +147,14 @@ const CVSection = () => (
                 <li className="flex gap-2">
                   <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
                   <span>(Co-I) HK RGC General Research Fund (Ref.: 11600724): An Ethnographic, Processual Study of Platformized Lives: WeChat in China as a Case Study</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
+                  <span>Kranzberg / Lesson Smith Fellowship, Georgia Institute of Technology</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
+                  <span>Ivan Allen College Travel and Fieldwork Grant, Georgia Institute of Technology</span>
                 </li>
               </ul>
             </div>

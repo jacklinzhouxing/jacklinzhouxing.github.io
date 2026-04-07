@@ -16,9 +16,9 @@ const englishMedia = [
 ];
 
 const chineseMedia = [
-  { year: 2025, title: "技术创新背后的劳动变迁", outlet: "信睿周报 (TheThinker Weekly)", url: "https://mp.weixin.qq.com/s/USg1rESJu4MdVm1OWWQqcw" },
-  { year: 2025, title: "平台经济从何处来，往何处去?", outlet: "信睿周报 (TheThinker Weekly)", url: "https://mp.weixin.qq.com/s/t899a93AWaXVBTiSB1Df6g" },
-  { year: 2023, title: '严肃谈一下"工作不断贬值"这个问题', outlet: "地球知识局 (Bureau of Knowledge about the Earth)", url: "https://mp.weixin.qq.com/s/hU7sIdJMjXlH2iQl3u_QEA" },
+  { year: 2025, title: "技术创新背后的劳动变迁 (Labor Transformation behind Technological Innovation)", outlet: "信睿周报 (TheThinker Weekly)", url: "https://mp.weixin.qq.com/s/USg1rESJu4MdVm1OWWQqcw" },
+  { year: 2025, title: "平台经济从何处来，往何处去? (Where Does the Platform Economy Come From, and Where Is It Going?)", outlet: "信睿周报 (TheThinker Weekly)", url: "https://mp.weixin.qq.com/s/t899a93AWaXVBTiSB1Df6g" },
+  { year: 2023, title: '严肃谈一下"工作不断贬值"这个问题 (A Serious Discussion on the Devaluation of Work)', outlet: "地球知识局 (Bureau of Knowledge about the Earth)", url: "https://mp.weixin.qq.com/s/hU7sIdJMjXlH2iQl3u_QEA" },
 ];
 
 const fadeUp = {
