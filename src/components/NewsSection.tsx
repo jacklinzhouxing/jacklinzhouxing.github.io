@@ -90,7 +90,7 @@ const fadeUp = {
 };
 
 const NewsSection = () => (
-  <section id="updates" className="py-20 border-t border-border">
+  <section id="news" className="py-20 border-t border-border">
     <div className="max-w-3xl mx-auto px-6">
       <motion.div {...fadeUp}>
         <h2 className="text-2xl md:text-3xl font-serif-display font-semibold text-foreground mb-2">
