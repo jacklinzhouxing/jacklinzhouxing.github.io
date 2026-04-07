@@ -9,6 +9,14 @@ interface NewsEntry {
 
 const newsItems: NewsEntry[] = [
   {
+    date: "April 3, 2026",
+    content: (
+      <>
+        My co-authored paper "Mediated Platform Governance: The Transformative Role of Labor Mediators in the Platform Economy" was honored as a <strong>Best Paper</strong> for the 86th Annual Meeting of the Academy of Management (AOM).
+      </>
+    ),
+  },
+  {
     date: "March 20, 2026",
     content: (
       <>
