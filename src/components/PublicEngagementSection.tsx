@@ -72,7 +72,7 @@ const PublicEngagementSection = () => (
     <div className="max-w-3xl mx-auto px-6">
       <motion.div {...fadeUp}>
         <h2 className="text-2xl md:text-3xl font-serif-display font-semibold text-foreground mb-2">
-          Public Engagement
+          Engagement
         </h2>
         <div className="w-12 h-px bg-primary/40 mb-10" />
       </motion.div>
