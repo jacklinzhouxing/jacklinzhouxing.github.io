@@ -9,7 +9,7 @@ const fadeUp = {
   transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
 };
 
-const CV_URL = "/Xing_Full%20CV_Apr%202026.pdf";
+const CV_URL = import.meta.env.BASE_URL + "Xing_Full%20CV_Apr%202026.pdf";
 
 const CVSection = () => (
   <section id="cv" className="py-20 border-t border-border bg-muted/20">
