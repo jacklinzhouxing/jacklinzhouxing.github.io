@@ -8,6 +8,7 @@ import PublicationsSection from "@/components/PublicationsSection";
 import CVSection from "@/components/CVSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 const Index = () => (
   <div className="min-h-screen bg-background">
@@ -22,6 +23,7 @@ const Index = () => (
       <ContactSection />
     </main>
     <Footer />
+    <BackToTop />
   </div>
 );
 
