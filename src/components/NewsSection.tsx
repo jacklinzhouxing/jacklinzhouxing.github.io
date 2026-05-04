@@ -9,6 +9,26 @@ interface NewsEntry {
 
 const newsItems: NewsEntry[] = [
   {
+    date: "May 1, 2026",
+    content: (
+      <>
+        Presented at the Fairbank Center for Chinese Studies/Asia Society Center on U.S.-China Policy Symposium, Harvard University.
+      </>
+    ),
+  },
+  {
+    date: "April 29, 2026",
+    content: (
+      <>
+        Presented "Ride or die: Deadline infrastructure and overwork in platform economies" at the{" "}
+        <a href="https://indl-na.sciencesconf.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 underline underline-offset-2">
+          International Network of Digital Labor- North America Symposium on Labor and Artificial Intelligence
+        </a>
+        , Yale University.
+      </>
+    ),
+  },
+  {
     date: "April 3, 2026",
     content: (
       <>
