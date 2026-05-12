@@ -9,6 +9,18 @@ interface NewsEntry {
 
 const newsItems: NewsEntry[] = [
   {
+    date: "May 8, 2026",
+    content: (
+      <>
+        Chaired the{" "}
+        <a href="https://www.dspeconference.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 underline underline-offset-2">
+          Digital Statecraft and Political Economy in China
+        </a>{" "}
+        conference at University of California, Berkeley.
+      </>
+    ),
+  },
+  {
     date: "May 1, 2026",
     content: (
       <>
