@@ -8,6 +8,16 @@ const ResearchGovernance = () => (
     narrative="This research pillar focuses on corporate strategies, state-tech relations, platform governance, and regulatory environments — primarily in the Chinese context. I investigate how platform companies navigate political and market pressures, how innovation policies are shaped and constrained by local contexts, and how the relationship between the state and technology firms evolves through crises and regulatory shifts."
     publications={[
       {
+        year: 2026,
+        title: "Rethinking AI From the Mobile End: An Assemblage-Centered Lens",
+        url: "https://journals.sagepub.com/doi/10.1177/20501579261458249",
+      },
+      {
+        year: 2026,
+        title: "Drive to Grow: Spatial Frictions and Struggles in a Chinese Ride-Hailing Platform's Scale-Making",
+        url: "https://journals.sagepub.com/doi/10.1177/20594364261456948",
+      },
+      {
         year: 2025,
         title: "作為全球拼裝體的平台：以滴滴的發展歷程與上市危機為例",
         url: "https://www.cschinese.com/issueArticle.asp?P_No=119&CA_ID=791",
