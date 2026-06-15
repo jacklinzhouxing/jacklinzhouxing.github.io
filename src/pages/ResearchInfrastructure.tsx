@@ -9,6 +9,16 @@ const ResearchInfrastructure = () => (
     publications={[
       {
         year: 2026,
+        title: "Rethinking AI From the Mobile End: An Assemblage-Centered Lens",
+        url: "https://journals.sagepub.com/doi/10.1177/20501579261458249",
+      },
+      {
+        year: 2026,
+        title: "Drive to Grow: Spatial Frictions and Struggles in a Chinese Ride-Hailing Platform's Scale-Making",
+        url: "https://journals.sagepub.com/doi/10.1177/20594364261456948",
+      },
+      {
+        year: 2026,
         title: "Patchwork surveillance and accountability labor: China's Health Code Systems during COVID-19",
         url: "https://journals.sagepub.com/doi/10.1177/20539517261419359",
       },
