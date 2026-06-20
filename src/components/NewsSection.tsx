@@ -9,6 +9,18 @@ interface NewsEntry {
 
 const newsItems: NewsEntry[] = [
   {
+    date: "June 7, 2026",
+    content: (
+      <>
+        Interviewed by Rachel Cheung in <em>The Wire China</em> article:{" "}
+        <a href="https://www.thewirechina.com/2026/06/07/balancing-ai-pains-and-gains/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 underline underline-offset-2">
+          Balancing AI Pains and Gains
+        </a>
+        .
+      </>
+    ),
+  },
+  {
     date: "May 8, 2026",
     content: (
       <>
