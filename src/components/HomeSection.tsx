@@ -27,7 +27,7 @@ const HomeSection = () => (
           </div>
           <div className="w-12 h-px bg-primary/40" />
           <p className="text-foreground/80 leading-relaxed text-[15px]">
-            I am an An Wang Postdoctoral Fellow at the <strong className="font-semibold text-foreground">Fairbank Center for Chinese Studies, Harvard University</strong>, and an incoming assistant professor at the <strong className="font-semibold text-foreground">Division of Public Policy, Hong Kong University of Science and Technology</strong>. I hold a Ph.D. in History and Sociology of Technology and Science and a graduate certificate in public policy from Georgia Institute of Technology.
+            I am an assistant professor at the <strong className="font-semibold text-foreground">Division of Public Policy, Hong Kong University of Science and Technology</strong>. Before that, I worked as an An Wang Postdoctoral Fellow at the <strong className="font-semibold text-foreground">Fairbank Center for Chinese Studies, Harvard University</strong>. I hold a Ph.D. in History and Sociology of Technology and Science and a graduate certificate in public policy from Georgia Institute of Technology.
           </p>
           <p className="text-foreground/80 leading-relaxed text-[15px]">
             My research spans sociology of technology and work, science and technology studies (STS), and technology and innovation policy in China, focusing on the social implications and governance of the platform economy, digital infrastructure, and digital labor.
