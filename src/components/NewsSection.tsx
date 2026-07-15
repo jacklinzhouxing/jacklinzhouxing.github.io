@@ -9,6 +9,18 @@ interface NewsEntry {
 
 const newsItems: NewsEntry[] = [
   {
+    date: "June 28, 2026",
+    content: (
+      <>
+        Interviewed by Will Langley in <em>The Financial Times</em> article:{" "}
+        <a href="https://www.ft.com/content/b1445598-e5e3-4530-9e82-e0155c44106b?accessToken=zwAAAZ9jkqcQkdOxRFWY5eNFMNOeguAVXEQQaw.MEUCIQCJaMZjWnuNimCe_VkdsLoMZd0fcQJc8GsM-gEqL-7KqAIgBNIrFb1f9aW9I5trHPhZgo4dkJF2KaYfTuQ7K7iiY8k&segmentId=e95a9ae7-622c-6235-5f87-51e412b47e97&shareId=897ddab0-608c-4d81-8312-c08dfcb78854&shareType=enterprise&syn-25a6b1a6=1" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 underline underline-offset-2">
+          Chinese tech hub's shift into robotaxis leaves drivers by the wayside
+        </a>
+        .
+      </>
+    ),
+  },
+  {
     date: "June 7, 2026",
     content: (
       <>
