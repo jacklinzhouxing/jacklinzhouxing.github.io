@@ -52,7 +52,7 @@ const CVSection = () => (
               <ul className="space-y-2 text-sm text-muted-foreground leading-relaxed">
                 <li className="flex gap-2">
                   <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
-                  <span>Incoming Assistant Professor, Division of Public Policy, Hong Kong University of Science and Technology</span>
+                  <span>Assistant Professor, Division of Public Policy, Hong Kong University of Science and Technology</span>
                 </li>
                 <li className="flex gap-2">
                   <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />

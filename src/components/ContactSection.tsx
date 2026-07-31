@@ -63,16 +63,9 @@ const ContactSection = () => {
               <div className="flex items-start gap-3 text-muted-foreground">
                 <MapPin size={16} className="text-primary shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-medium text-foreground mb-0.5">Harvard University</p>
-                  <p>Office S134, CGIS South Building</p>
-                  <p>1730 Cambridge St., Cambridge, MA</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 text-muted-foreground">
-                <MapPin size={16} className="text-primary shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-medium text-foreground mb-0.5">HKUST (Incoming)</p>
+                  <p className="font-medium text-foreground mb-0.5">Hong Kong University of Science and Technology</p>
                   <p>Division of Public Policy</p>
+                  <p>Clear Water Bay, Kowloon, Hong Kong</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
