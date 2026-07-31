@@ -99,6 +99,12 @@ const CVSection = () => (
               </div>
               <ul className="space-y-3 text-sm text-muted-foreground leading-relaxed">
                 <li>
+                  <strong className="text-foreground">Xing, J. L.</strong>, &amp; Zhang, J. (2026). Drive to grow: Spatial frictions and struggles in a Chinese Ride-hailing platform's scale-making. <em>Global Media and China</em>, 20594364261456948.
+                </li>
+                <li>
+                  <strong className="text-foreground">Xing, J. L.</strong> (2026). Rethinking AI from the mobile end: An assemblage-centered Lens. <em>Mobile Media &amp; Communication</em>, 20501579261458249.
+                </li>
+                <li>
                   <strong className="text-foreground">Xing, J. L.</strong>, &amp; Zheng, E. L. (2026). Patchwork surveillance and accountability labor: China's Health Code Systems during COVID-19. <em>Big Data &amp; Society</em>, 13(1).
                 </li>
                 <li>
