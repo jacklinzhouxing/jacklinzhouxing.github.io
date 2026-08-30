@@ -9,6 +9,18 @@ interface NewsEntry {
 
 const newsItems: NewsEntry[] = [
   {
+    date: "August 12, 2026",
+    content: (
+      <>
+        Interviewed by Will Langley in <em>The Financial Times</em> article:{" "}
+        <a href="https://as.ft.com/r/ba98c720-9c73-4482-a101-8d7329b55809" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/70 underline underline-offset-2">
+          China's great jobs squeeze
+        </a>
+        .
+      </>
+    ),
+  },
+  {
     date: "June 28, 2026",
     content: (
       <>
