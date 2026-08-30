@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Globe, Languages } from "lucide-react";
 
 const englishMedia = [
+  { year: 2026, title: "China's great jobs squeeze", outlet: "The Financial Times", type: "Interview", url: "https://as.ft.com/r/ba98c720-9c73-4482-a101-8d7329b55809" },
   { year: 2026, title: "Chinese tech hub's shift into robotaxis leaves drivers by the wayside", outlet: "The Financial Times", type: "Interview", url: "https://www.ft.com/content/b1445598-e5e3-4530-9e82-e0155c44106b?accessToken=zwAAAZ-3glvckdOxRFWY5eNFMNOeguAVXEQQaw.MEQCIBI0XyKzCAOtzjIA-ytrstYb4f04yuXlqiyrQ6ex8fJ2AiAtNu7vsyDeqSELwrB9NX5OyLj8oe2ZQsGuQVMTA8f7sA&segmentId=e95a9ae7-622c-6235-5f87-51e412b47e97&shareId=897ddab0-608c-4d81-8312-c08dfcb78854&shareType=enterprise&syn-25a6b1a6=1" },
   { year: 2026, title: "Balancing AI Pains and Gains", outlet: "The Wire China", type: "Interview", url: "https://www.thewirechina.com/2026/06/07/balancing-ai-pains-and-gains/" },
   { year: 2026, title: '"It feels like Squid Game": China\'s workers scramble to keep up in the AI race', outlet: "Rest of World", type: "Interview", url: "https://restofworld.org/2026/china-ai-anxiety-openclaw-jobs-redundancy/" },
