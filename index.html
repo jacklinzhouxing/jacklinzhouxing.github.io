@@ -23,6 +23,28 @@
     <meta name="twitter:site" content="@XingJLZ" />
     <meta name="twitter:creator" content="@XingJLZ" />
     <meta name="twitter:image" content="https://jacklinzhouxing.github.io/headshot.jpg" />
+
+    <!--
+      GitHub Pages serves 404.html for any path that is not a real file. public/404.html
+      rewrites deep links to /?/<path> so the app still boots, but the original path has to
+      be restored before React Router reads window.location — otherwise every deep link
+      (e.g. /research/automation) renders the homepage instead of the requested page.
+      This runs in <head>, ahead of the deferred module bundle.
+    -->
+    <script>
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
   </head>
 
   <body>

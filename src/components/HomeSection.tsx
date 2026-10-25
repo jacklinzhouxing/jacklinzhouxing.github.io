@@ -15,7 +15,7 @@ const HomeSection = () => (
         <div className="shrink-0">
           <img
             src={headshot}
-            alt="Professional headshot"
+            alt="Jack Linzhou Xing"
             className="w-40 h-48 md:w-48 md:h-56 object-cover rounded-sm shadow-md"
           />
         </div>

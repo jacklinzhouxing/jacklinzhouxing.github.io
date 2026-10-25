@@ -4,7 +4,6 @@ import NewsSection from "@/components/NewsSection";
 import ResearchSection from "@/components/ResearchSection";
 import TeachingSection from "@/components/TeachingSection";
 import PublicEngagementSection from "@/components/PublicEngagementSection";
-import PublicationsSection from "@/components/PublicationsSection";
 import CVSection from "@/components/CVSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
